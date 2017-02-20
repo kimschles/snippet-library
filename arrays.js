@@ -1,4 +1,4 @@
-//remove an item from an array and return the original array 
+//remove an item from an array and return the original array
 
 function removeWithoutCopy (arr, item) {
   var i;
@@ -12,6 +12,4 @@ function removeWithoutCopy (arr, item) {
     }
   }
   return arr;
-}
-
-console.log(removeWithoutCopy([1,2,3,3,4], 3));
+},

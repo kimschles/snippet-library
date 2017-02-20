@@ -1,3 +1,3 @@
 # Snippet Library
 
-This is a collection of my favorite code snippets. 
+This is a collection of my favorite JS code snippets. 
