@@ -12,4 +12,18 @@ function removeWithoutCopy (arr, item) {
     }
   }
   return arr;
-},
+}
+
+
+//count the number of duplicate items in an array
+function countItems(arr) {
+  let counter = {};
+  for (var i = 0; i < arr.length; i++) {
+    if (counter[arr[i]]) {
+      counter[arr[i]] += 1;
+    } else {
+      counter[arr[i]] = 1;
+    };
+  };
+  return counter
+}
