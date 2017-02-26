@@ -26,4 +26,4 @@ function countItems(arr) {
     };
   };
   return counter
-}
+};
