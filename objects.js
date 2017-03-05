@@ -6,7 +6,6 @@ var object = {
 };
 
 // loop through and object and return the values
-
 function returnValues(obj) {
   let keyArr = Object.keys(obj);
   let values = [];
