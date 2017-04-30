@@ -27,3 +27,7 @@ function countItems(arr) {
   };
   return counter
 };
+
+//Flatten a multidimensional array
+//From: http://www.jstips.co/en/javascript/flattening-multidimensional-arrays-in-javascript/
+var newArr = [].concat(...oldArrays);
