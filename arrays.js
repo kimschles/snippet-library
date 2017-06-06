@@ -31,3 +31,17 @@ function countItems(arr) {
 //Flatten a multidimensional array
 //From: http://www.jstips.co/en/javascript/flattening-multidimensional-arrays-in-javascript/
 let newArr = [].concat(...oldArrays);
+
+// Find and replace multiple items in an array
+function findMax (arr, from, to) {
+  var newArray = [];
+  var index = arr.indexOf(from);
+  while (index != -1) {
+    newArray.push(index)
+    index = arr.indexOf(from, index + 1)
+  }
+  for (var i = 0; i < newArray.length; i++){
+    arr[newArray[i]] = to
+  }
+  return arr
+}; 
