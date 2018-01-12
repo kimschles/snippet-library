@@ -8,7 +8,7 @@ function removeWithoutCopy (arr, item) {
     if (arr[i] === item) {
       arr.splice(i, 1)
       i--;
-      len--;
+      len--;q
     }
   }
   return arr;
@@ -33,15 +33,15 @@ function countItems(arr) {
 let newArr = [].concat(...oldArrays);
 
 // Find and replace multiple items in an array
-function findMax (arr, from, to) {
-  var newArray = [];
-  var index = arr.indexOf(from);
+function findAndReplace (arr, item1, item2) {
+  let newArray = [];
+  let index = arr.indexOf(item1);
   while (index != -1) {
     newArray.push(index)
-    index = arr.indexOf(from, index + 1)
+    index = arr.indexOf(item1, index + 1)
   }
   for (var i = 0; i < newArray.length; i++){
-    arr[newArray[i]] = to
+    arr[newArray[i]] = item2
   }
   return arr
-}; 
+};
